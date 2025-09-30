@@ -97,7 +97,3 @@ API documentation will be available at `http://localhost:8080/swagger-ui.html` a
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any queries or support, please contact the project maintainer.
