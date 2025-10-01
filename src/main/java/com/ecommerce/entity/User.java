@@ -66,6 +66,29 @@ public class User {
 
 
     
+    
+    public User(Long id,
+            @NotBlank(message = "Username is Mandatory") @Size(min = 3, max = 50, message = "Username must be between 3 and 50") String username,
+            @NotBlank(message = "Email is Manadatory") @Email(message = "Email should be vaild") String email,
+            @NotBlank(message = "Password is Manadatory") @Size(min = 6, message = "Password mininum 6 char") String password,
+            @NotBlank(message = "First name is mandatory") String firstName,
+            @NotBlank(message = "Last name is mandatory") String lastName, String phoneNumber, Role role,
+            LocalDateTime createdAt, LocalDateTime updatedAt) {
+        this.id = id;
+        this.username = username;
+        this.email = email;
+        this.password = password;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        PhoneNumber = phoneNumber;
+        this.role = role;
+        this.createdAt = createdAt;
+        this.updatedAt = updatedAt;
+    }
+
+
+
+
     public User(Long id,String username, String email, String password,String firstName, String lastName, String phoneNumber) {
         this();
         this.id = id;
